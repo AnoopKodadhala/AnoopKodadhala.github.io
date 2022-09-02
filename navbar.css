@@ -17,6 +17,12 @@ body {
   z-index: 9;
 }
 
+.nav__link:hover {
+  color: aliceblue;
+  text-decoration: underline;
+  text-underline-offset: 0.50em;
+}
+
 .nav--hidden {
   transform: translateY(calc(-1 * var(--nav-height)));
   box-shadow: none;
