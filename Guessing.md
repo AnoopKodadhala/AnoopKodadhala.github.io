@@ -1,6 +1,5 @@
 # Guessing Game Flowchart
 
-## Flowchart
 ```mermaid
 flowchart TD
     Start([Start]) --> GenerateNumber([Generating Number between 1 and 100])
