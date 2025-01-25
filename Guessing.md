@@ -17,3 +17,12 @@ flowchart TD
     NumCheck -- "Less Than" --> ResultLow{This Number is too Low}
     ResultLow --> NumberVal
 ```
+
+1. The Game starts of with the computer generating a number from 1 to 100. 
+2. It then takes the the users input for a number. 
+3. The number is then checked to make sure its a number, if it is not it send it back to the user input stage. 
+4. The Number is then checked to make sure its in range, if it is not it send it back to the user input stage. 
+5. The Number is then checked to see where it compares to the generated number
+   - If the Number is higher, it states that it is too high and sends the user back to the user input stage. 
+   - If the Number is lower, it states that it is too low and sends the user back to the user input stage. 
+   - If the Number is equal, it states that the user wins.
