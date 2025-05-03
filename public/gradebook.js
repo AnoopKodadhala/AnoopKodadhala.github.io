@@ -6,6 +6,8 @@ function populateGradebook(data) {
     console.log("Populating gradebook with data:", data);
 }
 
+
+
 function fetchGradeData() {
     console.log("Fetching grade data...");
     let xhr = new XMLHttpRequest();
@@ -16,8 +18,7 @@ function fetchGradeData() {
 
         if(xhr.readyState == xhr.DONE) {
             if(xhr.status !== 200) {
-                console.error(`Could not get grades. 
-                    Status: ${xhr.status}`);
+                console.error(`Could not get grades. Status: ${xhr.status}`);
             }
             populateGradebook(JSON.parse(xhr.responseText));
         }
